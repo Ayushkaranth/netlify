@@ -9,7 +9,7 @@ import { useAuthStore } from "./store/authUser.js"
 import { useEffect } from "react"
 import { Loader } from "lucide-react"
 import SearchPage from "./pages/SearchPage.jsx"
-import SearchHistoryPage from "./pages/searchHistoryPage.jsx"
+import SearchHistoryPage from "./pages/SearchHistoryPage.jsx"
 import NotFoundPage from "./pages/404.jsx"
 
 

@@ -5,7 +5,7 @@
   "main": "backend/server.js",
   "scripts": {
     "dev": "NODE_ENV=development node --watch backend/server.js",
-    "start": "powershell -Command \"$env:NODE_ENV='production'; node backend/server.js\"",
+    "start": "cross-env NODE_ENV=production node backend/server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
@@ -21,5 +21,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.3",
     "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
